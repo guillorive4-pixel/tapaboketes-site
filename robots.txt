@@ -1,0 +1,5 @@
+# Mientras el sitio sea un prototipo, cada pagina trae "noindex".
+# Al lanzar: quita el noindex de las paginas y reemplaza DOMINIO-PENDIENTE.
+User-agent: *
+Allow: /
+Sitemap: https://DOMINIO-PENDIENTE/sitemap.xml
