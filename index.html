@@ -32,7 +32,7 @@
     <a class="brand" href="index.html" aria-label="Los Tapaboketes, inicio"><img src="logo-sm.webp" width="300" height="256" alt="Los Tapaboketes"></a>
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menú</button>
     <ul class="menu" id="menu">
-      <li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="sobre.html">Sobre ellos</a></li><li><a class="btn chico" href="dona.html">Dona</a></li>
+      <li><a href="index.html" aria-current="page">Inicio</a></li><li><a href="#conocelos">Sobre ellos</a></li><li><a class="btn chico" href="#dona">Dona</a></li>
     </ul>
   </nav>
 </header>
@@ -51,13 +51,26 @@
     <h1>Tú pones la bolsa. Ellos tapan el <em>bokete.</em></h1>
     <p class="sub">Dona bolsas de asfalto frío y ayuda a Los Tapaboketes a llegar a los <span data-dato="meta">78</span> municipios de Puerto Rico.</p>
     <div class="acciones">
-      <a class="btn" href="dona.html" data-mag>Dona bolsas de asfalto</a>
-      <a class="btn fantasma" href="sobre.html">Conócelos</a>
+      <a class="btn" href="#dona" data-mag>Dona bolsas de asfalto</a>
+      <a class="btn fantasma" href="#conocelos">Conócelos</a>
     </div>
   </div>
+  <a class="bajar" href="#conocelos" aria-label="Seguir bajando"><span aria-hidden="true">↓</span></a>
 </section>
 
 <div class="banda" aria-hidden="true"><div class="pista"><span>San Juan</span><span>Ponce</span><span>Mayagüez</span><span>Vega Baja</span><span>Dorado</span><span>Arecibo</span><span>Caguas</span><span>Bayamón</span><span>Humacao</span><span>Cabo Rojo</span><span>Aguadilla</span><span>Fajardo</span><span>Guayama</span><span>Utuado</span><span>San Juan</span><span>Ponce</span><span>Mayagüez</span><span>Vega Baja</span><span>Dorado</span><span>Arecibo</span><span>Caguas</span><span>Bayamón</span><span>Humacao</span><span>Cabo Rojo</span><span>Aguadilla</span><span>Fajardo</span><span>Guayama</span><span>Utuado</span></div></div>
+
+<section class="section" id="conocelos">
+  <div class="wrap">
+    <div class="etiqueta rev">Conócelos</div>
+    <h2 class="rev">Tres jóvenes. Cero excusas.</h2>
+    <div class="sobre sobre-uno rev">
+      <p>Se cansaron de romper gomas, aros y esquivar boketes. Así que en vez de esperar, agarraron las palas. <strong>Los Tapaboketes</strong> son tres jóvenes de Puerto Rico que tapan boketes con asfalto frío, humor y una aplanadora, sin cobrarle un chavo a nadie.</p>
+      <p>Empezaron haciendo contenido y un día quisieron llevar un mensaje positivo. Hoy llevan más de <strong><span data-dato="boketes">400</span> boketes tapados</strong> en <strong><span data-dato="visitados">73</span> municipios</strong>. La meta: los <span data-dato="meta">78</span>, y después, universidades y barrios.</p>
+      <p>Los auspiciadores les han dado las bolsas, pero cada municipio nuevo significa más viajes, más material y más boketes.</p>
+    </div>
+  </div>
+</section>
 
 <section class="section compacta">
   <div class="wrap">
@@ -189,23 +202,49 @@
   </div>
 </section>
 
-<section class="section">
-  <div class="wrap tienda">
-    <figure class="bolsa rev">
-        <a class="bolsa-img" id="bolsaImg" data-marca="IMAGE NEEDS SUPPLIER APPROVAL" href="dona.html"><span class="solo-lectores">Dona bolsas de asfalto</span>
-          <img src="bolsa.jpg" width="1000" height="1000" loading="lazy" alt="">
+<section class="section" id="dona">
+  <div class="wrap">
+    <div class="etiqueta rev">Dona por tu isla</div>
+    <h2 class="rev">Dona bolsas de asfalto</h2>
+    <p class="lead rev">Hazlo por Puerto Rico. Hazlo por nosotros. Escoge cuántas bolsas quieres dar y verás el total claro antes de pagar.</p>
+    <div class="contador rev" aria-live="polite">
+      <div class="odo" id="odo" role="img" aria-label="0 bolsas donadas"><span class="dig"><span class="tira"><i>0</i></span></span><span class="dig"><span class="tira"><i>0</i></span></span></div>
+      <p class="contador-t">bolsas donadas hasta ahora</p>
+    </div>
+    <div class="tienda">
+      <figure class="bolsa rev">
+        <div class="bolsa-img" id="bolsaImg" data-marca="IMAGE NEEDS SUPPLIER APPROVAL">
+          <img src="bolsa.jpg" width="1000" height="1000" loading="lazy" alt="Bolsa de asfalto frío QUIKRETE Blacktop Repair de 50 libras">
           <span class="ph">Aquí va la foto de la bolsa</span>
-        </a>
+        </div>
         <figcaption>Asfalto frío de 50 lb · alrededor de $25 por bolsa</figcaption>
       </figure>
-    <div class="rev">
-      <div class="etiqueta">Una bolsa, un bokete</div>
-      <h2>Dona por tu isla</h2>
-      <p class="lead">Hazlo por Puerto Rico. Hazlo por nosotros. Cada bolsa de asfalto frío de 50 lb cuesta alrededor de $25, y cada bokete necesita una cantidad distinta, así que todas cuentan.</p>
-      <a class="btn" href="dona.html" data-mag>Dona bolsas de asfalto</a>
+      <div class="caja rev">
+      <h2>Tu aportación</h2>
+      <p>Cada bolsa rinde para tapar parte de un bokete.</p>
+      <div class="opciones" role="group" aria-label="Cantidad de bolsas">
+        <button class="op" type="button" data-n="1" aria-pressed="false"><b>1</b><small>bolsa</small></button>
+        <button class="op" type="button" data-n="5" aria-pressed="true"><b>5</b><small>bolsas</small></button>
+        <button class="op" type="button" data-n="10" aria-pressed="false"><b>10</b><small>bolsas</small></button>
+      </div>
+      <label class="otra" for="otra">
+        <span>Otra cantidad</span>
+        <input id="otra" type="number" inputmode="numeric" min="1" max="100" step="1" placeholder="Ej. 3">
+        <span>bolsas</span>
+      </label>
+      <div class="total" aria-live="polite"><span>Total</span><b id="total">$125</b></div>
+      <button class="btn ancho" id="donar" type="button" data-mag>Dona ahora</button>
+      <ul class="metodos" aria-label="Métodos de pago">
+        <li>Apple Pay <span class="pronto">· pronto</span></li>
+        <li>ATH Móvil <span class="pronto">· pronto</span></li>
+        <li>Tarjeta <span class="pronto">· pronto</span></li>
+      </ul>
+      <p class="nota" id="nota">Verás el total claro antes de pagar. Al continuar aceptas los <a href="legal.html#terminos">Términos de uso</a> y la <a href="legal.html#privacidad">Política de privacidad</a>. Las aportaciones son finales, salvo errores o cobros duplicados: mira la <a href="legal.html#devoluciones">política de devoluciones</a>.</p>
+    </div>
     </div>
   </div>
 </section>
+
 
 <section class="section compacta reporte">
   <div class="wrap">
@@ -228,6 +267,12 @@
   </div>
 </section>
 
+<dialog id="modal" aria-labelledby="mTitulo">
+  <h2 id="mTitulo">Casi listo</h2>
+  <div class="resumen"><span id="mCantidad">5 bolsas</span><b id="mTotal">$125</b></div>
+  <p id="mAviso">Esta es una vista previa: los pagos con Apple Pay, ATH Móvil y tarjeta se activan pronto. No se ha cobrado nada.</p>
+  <div class="fila"><button class="btn" type="button" data-cerrar>Entendido</button></div>
+</dialog>
 </main>
 <footer class="site-footer">
   <div class="foot">
@@ -239,8 +284,9 @@
       <h2>Navegar</h2>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="sobre.html">Sobre ellos</a></li>
-        <li><a href="dona.html">Dona</a></li>
+        <li><a href="#conocelos">Sobre ellos</a></li>
+        <li><a href="#dona">Dona</a></li>
+        <li><a href="dona.html#faq">Preguntas frecuentes</a></li>
       </ul>
     </div>
     <div>

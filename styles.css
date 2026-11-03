@@ -315,3 +315,13 @@ body[data-oficial="on"] .aviso-proto,body[data-oficial="on"] .legal-borrador{dis
 body[data-oficial="on"] .video.vacio{display:none}
 
 .solo-lectores{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* inicio en una sola página */
+section[id]{scroll-margin-top:70px}
+.hero .bajar{display:none;position:absolute;left:50%;bottom:clamp(8px,2svh,20px);transform:translateX(-50%);width:44px;height:44px;place-items:center;border:2px solid var(--amarillo,#ffd21f);border-radius:50%;color:var(--amarillo,#ffd21f);text-decoration:none;font-size:20px;line-height:1;animation:bajar 1.8s ease-in-out infinite;z-index:2}
+.hero .bajar:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@keyframes bajar{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+@media (min-height:820px){.hero .bajar{display:grid}}
+@media (prefers-reduced-motion:reduce){.hero .bajar{animation:none}}
+.sobre.sobre-uno{display:block;max-width:720px}
+#dona .contador{margin:18px 0 34px}
