@@ -325,3 +325,5 @@ section[id]{scroll-margin-top:70px}
 @media (prefers-reduced-motion:reduce){.hero .bajar{animation:none}}
 .sobre.sobre-uno{display:block;max-width:720px}
 #dona .contador{margin:18px 0 34px}
+.caja>p.pend-abogado,.pend-abogado b{color:#ff3b30}
+.caja>p.pend-abogado{margin-top:10px;margin-bottom:0;font-size:14px}
