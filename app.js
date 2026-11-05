@@ -50,7 +50,7 @@
       if (v === null || v === undefined) { const c = odo.closest('.contador'); if (c) c.hidden = true; }
       else {
         const s = String(Math.max(0, Math.floor(v))).padStart(2, '0');
-        odo.setAttribute('aria-label', Math.max(0, Math.floor(v)) + ' bolsas donadas'); odo.setAttribute('role', 'img');
+        odo.setAttribute('aria-label', Math.max(0, Math.floor(v)) + ' bolsas compradas'); odo.setAttribute('role', 'img');
         odo.innerHTML = [...s].map(d => '<span class="dig" aria-hidden="true"><span class="tira" data-d="' + d + '">' + '0123456789'.split('').map(n => '<i>' + n + '</i>').join('') + '</span></span>').join('');
         const rueda = () => $$('.tira', odo).forEach((t, i) => { t.style.transitionDelay = reduce ? '0s' : (i * 140) + 'ms'; t.style.transform = 'translateY(' + (-t.dataset.d * 10) + '%)'; });
         if (reduce || !('IntersectionObserver' in window)) rueda();
@@ -65,7 +65,7 @@
     });
 
     /* compartir: menú nativo del teléfono, o copiar el enlace */
-    const msg = 'Dona por tu isla: tapa un bokete con Los Tapaboketes.';
+    const msg = 'Compra una bolsa por tu isla: tapa un bokete con Los Tapaboketes.';
     $$('[data-compartir]').forEach(b => b.addEventListener('click', async () => {
       const url = location.origin && location.origin !== 'null' ? location.origin + '/' : location.href;
       try {
@@ -199,7 +199,7 @@
         btn.disabled = true; btn.textContent = 'Meta del mes completa'; otra.disabled = true;
         if (nota) nota.textContent = '¡Gracias, Puerto Rico! La meta de este mes ya se completó. Vuelve el mes que viene.';
       } else if (restan !== Infinity && nota) {
-        nota.insertAdjacentHTML('afterbegin', 'Este mes quedan ' + restan + ' bolsas por donar. ');
+        nota.insertAdjacentHTML('afterbegin', 'Este mes quedan ' + restan + ' bolsas por comprar. ');
       }
       btn.addEventListener('click', () => {
         const url = CONFIG.pagosActivos ? destino(n) : '';
